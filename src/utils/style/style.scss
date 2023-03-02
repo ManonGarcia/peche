@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.header__bloc {
+    .header__titre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__logo {
+        width: 12%;
+    }
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 2% auto;
+
+        & a {
+            padding: .1% 2%;
+            text-decoration: none;
+            color: black;
+            border-radius: 25px;
+        
+            &:hover {
+                transform: scale(1.1);
+                background-color: antiquewhite;
+            }
+            &.active {
+                transform: scale(1.1);
+                background-color: antiquewhite;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.img__banniere {
+    width: 100%;
+    height: 430px;
+    opacity: .85;
+}
