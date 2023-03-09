@@ -11,11 +11,11 @@ function DescriptionPanel(props) {
                             <p>{props.description}</p>
                         </div>
                         <div className="divImg__presentation">
-                            <img src={props.imgUrl} alt="" />
+                            <img src={props.imgUrl} alt="" className="img__presentation"/>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
     )
 };
 

@@ -4,14 +4,13 @@ import DescriptionPanel from "../../componants/Description/description";
 import WhatElse from "../../componants/PanelWhatElse/whatElse";
 
 export function Home() {
-    const [panel, setPanel] = useState({});
-    console.log(panel);
+    const [panels, setPanels] = useState([]);
     useEffect(() => fetchDescription, []);
 
     function fetchDescription() {
-        fetch("descriptionPanel.json")
+        fetch('http://localhost:3001/panel')
             .then((res) => res.json())
-            .then((res) => setPanel(res))
+            .then((res) => setPanels(res))
             .catch(console.error);
     };
 
@@ -20,8 +19,7 @@ export function Home() {
             <BannerHome />
             <div>
                 <div className="home_description">
-                    <DescriptionPanel title={panel.title} imgUrl={panel.picture} description={panel.description}/>
-                    <DescriptionPanel title={panel.title} imgUrl={panel.picture} description={panel.description}/>
+                    {panels.map((panel, key)=> <DescriptionPanel key={key} title={panel.title} imgUrl={panel.picture} description={panel.description}/>)}
                 </div>
                 <div>
                     <WhatElse />

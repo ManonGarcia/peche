@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { Home } from "./Pages/Home";
-// import Apart from "./pages/Apart";
+import Spots from "./Pages/Spots";
 // import About from "./pages/About";
 import { Header } from "./Layout/Header/header";
-// import Footer from "./layout/Footer";
+import Footer from "./Layout/Footer/footer";
 // import Error from "./components/Error";
 import "./utils/style/style.css";
 
@@ -14,7 +14,7 @@ const MainTemplate = () => {
         <div>
             <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 };
@@ -29,7 +29,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/coins-sympas",
-                // element: <Apart/>,
+                element: <Spots/>,
             },
             {
                 path: "/checklists",
