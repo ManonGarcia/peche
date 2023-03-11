@@ -20,10 +20,10 @@ function WhatElse() {
                 <div className="sommaire__flex">
                     {whatElse.map((whatElse, key)=> <WhatElseContent key={key} title={whatElse.title} imgUrl={whatElse.picture} description={whatElse.description}/>)}
                 </div>
-                <div class="contact__sommaire">
+                <div className="contact__sommaire">
                     <p>Et si vous avez besoin de nous joindre, n'hésitez pas !</p>
                     <Link to="/contact">
-                        <button class="btn__sommaire">Contact</button>
+                        <button className="btn__sommaire">Contact</button>
                     </Link>
                 </div>
             </div>

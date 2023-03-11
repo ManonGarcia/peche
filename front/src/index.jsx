@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { Home } from "./Pages/Home";
 import Spots from "./Pages/Spots";
-// import About from "./pages/About";
+import Contact from "./Pages/Contact";
 import { Header } from "./Layout/Header/header";
 import Footer from "./Layout/Footer/footer";
 // import Error from "./components/Error";
@@ -49,7 +49,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/contact",
-                // element: <About />,
+                element: <Contact />,
             }
         ]
     }

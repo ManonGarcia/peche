@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <div class="bloc__footer">
+        <div className="bloc__footer">
             <h4>La Pêche, un sport, un passe-temps, une passion.</h4>
-            <div class="liens__footer">
+            <div className="liens__footer">
                 <Link>Booki.com</Link>
                 <Link>Ohmyfood.com</Link>
                 <Link>LaPanthère.com</Link>
