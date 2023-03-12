@@ -262,3 +262,57 @@ body {
         }
     }
 }
+
+.bloc_checklists {
+    text-align: center;
+
+    & h1 {
+        margin: auto;
+        margin-top: 5%;
+        border-bottom: 1px solid black;
+        width: 52%;
+    }
+    .checklist_title_text {
+        font-style: italic;
+    }
+
+    .checklists_banner {
+        text-align: center;
+    
+        .checklists_banner_img {
+            width: 70%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 2.5rem;
+        }
+    }
+
+    .checklists_flex {
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;
+
+        .checklist {
+            width: 45%;
+            border-radius: 25px;
+            text-align: center;
+            color: #CD595E;
+            background-color: #ffffff;
+            box-shadow: 1px 0px 10px 4px #aeaeae;
+
+            & img {
+                width: 100%;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+
+            & h2 {
+                padding: 2%;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

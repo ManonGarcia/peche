@@ -232,4 +232,51 @@ body {
 }
 .form_contact .form .border_input_form:hover {
   background-color: #F9D0A4;
+}
+
+.bloc_checklists {
+  text-align: center;
+}
+.bloc_checklists h1 {
+  margin: auto;
+  margin-top: 5%;
+  border-bottom: 1px solid black;
+  width: 52%;
+}
+.bloc_checklists .checklist_title_text {
+  font-style: italic;
+}
+.bloc_checklists .checklists_banner {
+  text-align: center;
+}
+.bloc_checklists .checklists_banner .checklists_banner_img {
+  width: 70%;
+  height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.5rem;
+}
+.bloc_checklists .checklists_flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+.bloc_checklists .checklists_flex .checklist {
+  width: 45%;
+  border-radius: 25px;
+  text-align: center;
+  color: #CD595E;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 10px 4px #aeaeae;
+}
+.bloc_checklists .checklists_flex .checklist img {
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.bloc_checklists .checklists_flex .checklist h2 {
+  padding: 2%;
+}
+.bloc_checklists .checklists_flex .checklist:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */

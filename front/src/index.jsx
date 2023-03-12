@@ -6,6 +6,7 @@ import Spots from "./Pages/Spots";
 import Contact from "./Pages/Contact";
 import { Header } from "./Layout/Header/header";
 import Footer from "./Layout/Footer/footer";
+import Checklists from "./Pages/Checklists";
 // import Error from "./components/Error";
 import "./utils/style/style.css";
 
@@ -33,7 +34,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/checklists",
-                // element: <About />,
+                element: <Checklists />,
             },
             {
                 path: "/conseils",
